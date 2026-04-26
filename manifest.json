@@ -1,0 +1,27 @@
+{
+  "name": "DJANDJOU 3.0",
+  "short_name": "DJANDJOU",
+  "description": "Rencontres authentiques, connexions infinies",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#e91e63",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://api.dicebear.com/7.x/initials/svg?seed=DJ&backgroundColor=e91e63&fontSize=40",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://api.dicebear.com/7.x/initials/svg?seed=DJ&backgroundColor=e91e63&fontSize=40",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["social", "lifestyle"],
+  "lang": "fr",
+  "screenshots": []
+}
