@@ -361,7 +361,23 @@ function cycleLang(){
 
 function setGender(val,btn){
   selectedGender=val;
-  document.querySelectorAll('#register .gender-row:first-of-type .gender-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.gender-row .gender-btn').forEach(b=>{
+    if(b.getAttribute('onclick').includes('setGender'))
+      b.classList.remove('active');
+  });
+  if(btn)btn.classList.add('active');
+}
+
+function setLooking(val,btn){
+  selectedLooking=val;
+  document.querySelectorAll('.gender-row .gender-btn').forEach(b=>{
+    if(b.getAttribute('onclick').includes('setLooking'))
+      b.classList.remove('active');
+  });
+  if(btn)btn.classList.add('active');
+}(val,btn){
+  selectedGender=val;
+  document.querySelectorAll('#register .gender-row .gender-btn[onclick*="setGender"]').forEach(b=>b.classList.remove('active'));
   if(btn)btn.classList.add('active');
 }
 function setLooking(val,btn){
